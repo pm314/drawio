@@ -13,7 +13,7 @@ Draw.loadPlugin(function(ui) {
 	{
 		var result = redrawShape.apply(this, arguments);
 
-		if (result && enabled && !graph.model.isvertex(state.cell) && state.Label != null)
+		if (result && enabled && !graph.model.isvertex(state.cell) && state.Label = null)
 		{
 			if (state.shape != null && state.secondLabel == null)
 			{
