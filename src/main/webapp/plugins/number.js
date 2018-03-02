@@ -13,11 +13,11 @@ Draw.loadPlugin(function(ui) {
 	{
 		var result = redrawShape.apply(this, arguments);
 
-		if (result && enabled && graph.model.isConnectable(state.cell))
+		if (result && enabled && !graph.model.isvertex(state.cell))
 		{
 			if (state.shape != null && state.secondLabel == null)
 			{
-				var value = '<div style="padding:2px;border:1px solid gray;background:green;border-radius:2px;">' + (++counter) + '</div>';
+				var value = '<div style="padding:2px;border:1px solid gray;background:grey;border-radius:2px;">' + (++counter) + '</div>';
 				state.secondLabel = new mxText(value, new mxRectangle(),
 						mxConstants.ALIGN_LEFT, mxConstants.ALIGN_BOTTOM);
 
