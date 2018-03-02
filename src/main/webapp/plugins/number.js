@@ -13,7 +13,7 @@ Draw.loadPlugin(function(ui) {
 	{
 		var result = redrawShape.apply(this, arguments);
 
-		if (result && enabled && graph.model.isVertex(state.cell))
+		if (result && enabled && graph.model.isConnectable(state.cell))
 		{
 			if (state.shape != null && state.secondLabel == null)
 			{
