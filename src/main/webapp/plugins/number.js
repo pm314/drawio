@@ -17,7 +17,7 @@ Draw.loadPlugin(function(ui) {
 		{
 			if (state.shape != null && state.secondLabel == null)
 			{
-				var value = '<div style="padding:2px;border:1px solid gray;background:yellow;border-radius:2px;">' + (++counter) + '</div>';
+				var value = '<div style="padding:2px;border:1px solid gray;background:green;border-radius:2px;">' + (++counter) + '</div>';
 				state.secondLabel = new mxText(value, new mxRectangle(),
 						mxConstants.ALIGN_LEFT, mxConstants.ALIGN_BOTTOM);
 
