@@ -13,7 +13,7 @@ Draw.loadPlugin(function(ui) {
 	{
 		var result = redrawShape.apply(this, arguments);
 
-		if (result && enabled && graph.model.isedge(state.cell))
+		if (result && enabled && (this.graph.getModel().isEdge(cell)))
 		{
 			if (state.shape != null && state.secondLabel == null)
 			{
