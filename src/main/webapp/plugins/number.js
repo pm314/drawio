@@ -19,7 +19,7 @@ Draw.loadPlugin(function(ui) {
 			{
 				var value = '<div style="padding:2px;border:1px solid gray;background:grey;border-radius:2px;">' + (++counter) + '</div>';
 				state.secondLabel = new mxText(value, new mxRectangle(),
-						mxConstants.ALIGN_LEFT, mxConstants.ALIGN_BOTTOM);
+						mxConstants.ALIGN_CENTER, mxConstants.ALIGN_MIDDLE);
 
 				// Styles the label
 				state.secondLabel.size = 12;
